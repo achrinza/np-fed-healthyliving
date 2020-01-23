@@ -1,5 +1,6 @@
-import Hero from './hero';
 import Head from 'next/head';
+import Hero from '../components/hero';
+import Header from '../components/header';
 
 export default function Homepage() {
     return (

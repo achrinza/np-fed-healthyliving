@@ -4861,7 +4861,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\rifaa\\Desktop\\np-fed-healthyliving-update\\concept-demo\\nextjs\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "C:\\Users\\acer\\Documents\\NP stuff\\FED\\Git Test\\np-fed-healthyliving\\concept-demo\\nextjs\\.next");
       return error;
     }
   };

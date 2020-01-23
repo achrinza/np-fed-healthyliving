@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -109,7 +109,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\rifaa\\Desktop\\np-fed-healthyliving-update\\concept-demo\\nextjs\\pages\\hero.tsx";
+var _jsxFileName = "C:\\Users\\acer\\Documents\\NP stuff\\FED\\Git Test\\np-fed-healthyliving\\concept-demo\\nextjs\\pages\\hero.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -125,7 +125,7 @@ function Hero(props) {
     href: "https://fonts.googleapis.com/css?family=Roboto&display=swap",
     rel: "stylesheet",
     key: "font-roboto-500",
-    className: "jsx-3665738959",
+    className: "jsx-3353746179",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -133,16 +133,16 @@ function Hero(props) {
     __self: this
   })), __jsx("img", {
     src: props.src,
-    className: "jsx-3665738959" + " " + "hero-img",
+    className: "jsx-3353746179" + " " + "hero-img",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "3665738959",
+    id: "3353746179",
     __self: this
-  }, ".hero-img.jsx-3665738959{height:30vh;width:100%;object-fit:cover;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccmlmYWFcXERlc2t0b3BcXG5wLWZlZC1oZWFsdGh5bGl2aW5nLXVwZGF0ZVxcY29uY2VwdC1kZW1vXFxuZXh0anNcXHBhZ2VzXFxoZXJvLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFXd0IsQUFHaUMsWUFDRCxXQUNNLGlCQUNyQiIsImZpbGUiOiJDOlxcVXNlcnNcXHJpZmFhXFxEZXNrdG9wXFxucC1mZWQtaGVhbHRoeWxpdmluZy11cGRhdGVcXGNvbmNlcHQtZGVtb1xcbmV4dGpzXFxwYWdlc1xcaGVyby50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSGVybyhwcm9wcykge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgICA8SGVhZD5cclxuICAgICAgICAgICAgICAgIDxsaW5rIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvJmRpc3BsYXk9c3dhcFwiIHJlbD1cInN0eWxlc2hlZXRcIiBrZXk9XCJmb250LXJvYm90by01MDBcIiAvPlxyXG4gICAgICAgICAgICA8L0hlYWQ+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImhlcm8taW1nXCIgc3JjPXtwcm9wcy5zcmN9IC8+XHJcblxyXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgICAgICAgICAuaGVyby1pbWcge1xyXG4gICAgICAgICAgICAgICAgICAgIGhlaWdodDogMzB2aDtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgICAgICAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICAgIDwvPlxyXG4gICAgKTtcclxufVxyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\rifaa\\\\Desktop\\\\np-fed-healthyliving-update\\\\concept-demo\\\\nextjs\\\\pages\\\\hero.tsx */"));
+  }, ".hero-img.jsx-3353746179{min-height:40vh;max-height:50vh;width:100%;object-fit:cover;position:relative;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcYWNlclxcRG9jdW1lbnRzXFxOUCBzdHVmZlxcRkVEXFxHaXQgVGVzdFxcbnAtZmVkLWhlYWx0aHlsaXZpbmdcXGNvbmNlcHQtZGVtb1xcbmV4dGpzXFxwYWdlc1xcaGVyby50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV3dCLEFBR3FDLGdCQUNBLGdCQUNMLFdBQ00saUJBQ0Esa0JBQ3JCIiwiZmlsZSI6IkM6XFxVc2Vyc1xcYWNlclxcRG9jdW1lbnRzXFxOUCBzdHVmZlxcRkVEXFxHaXQgVGVzdFxcbnAtZmVkLWhlYWx0aHlsaXZpbmdcXGNvbmNlcHQtZGVtb1xcbmV4dGpzXFxwYWdlc1xcaGVyby50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSGVybyhwcm9wcykge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgICA8SGVhZD5cclxuICAgICAgICAgICAgICAgIDxsaW5rIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvJmRpc3BsYXk9c3dhcFwiIHJlbD1cInN0eWxlc2hlZXRcIiBrZXk9XCJmb250LXJvYm90by01MDBcIiAvPlxyXG4gICAgICAgICAgICA8L0hlYWQ+XHJcbiAgICAgICAgICAgIFxyXG4gICAgICAgICAgICA8aW1nIGNsYXNzTmFtZT1cImhlcm8taW1nXCIgc3JjPXtwcm9wcy5zcmN9IC8+XHJcblxyXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgICAgICAgICAuaGVyby1pbWcge1xyXG4gICAgICAgICAgICAgICAgICAgIG1pbi1oZWlnaHQ6IDQwdmg7XHJcbiAgICAgICAgICAgICAgICAgICAgbWF4LWhlaWdodDogNTB2aDtcclxuICAgICAgICAgICAgICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICAgICAgICAgICAgICBvYmplY3QtZml0OiBjb3ZlcjtcclxuICAgICAgICAgICAgICAgICAgICBwb3NpdGlvbjpyZWxhdGl2ZTtcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICAgIDwvPlxyXG4gICAgKTtcclxufVxyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\acer\\\\Documents\\\\NP stuff\\\\FED\\\\Git Test\\\\np-fed-healthyliving\\\\concept-demo\\\\nextjs\\\\pages\\\\hero.tsx */"));
 }
 
 /***/ }),
@@ -164,7 +164,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ "./pages/hero.tsx");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\rifaa\\Desktop\\np-fed-healthyliving-update\\concept-demo\\nextjs\\pages\\index.tsx";
+var _jsxFileName = "C:\\Users\\acer\\Documents\\NP stuff\\FED\\Git Test\\np-fed-healthyliving\\concept-demo\\nextjs\\pages\\index.tsx";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
@@ -218,19 +218,19 @@ function Homepage() {
   }, "Hello, Welrd!"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "4240109103",
     __self: this
-  }, ".h1.jsx-4240109103{font-family:'Roboto';}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xccmlmYWFcXERlc2t0b3BcXG5wLWZlZC1oZWFsdGh5bGl2aW5nLXVwZGF0ZVxcY29uY2VwdC1kZW1vXFxuZXh0anNcXHBhZ2VzXFxpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY3dCLEFBRzBDLHFCQUN6QiIsImZpbGUiOiJDOlxcVXNlcnNcXHJpZmFhXFxEZXNrdG9wXFxucC1mZWQtaGVhbHRoeWxpdmluZy11cGRhdGVcXGNvbmNlcHQtZGVtb1xcbmV4dGpzXFxwYWdlc1xcaW5kZXgudHN4Iiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlcm8gZnJvbSAnLi9oZXJvJztcclxuaW1wb3J0IEhlYWQgZnJvbSAnbmV4dC9oZWFkJztcclxuXHJcbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWVwYWdlKCkge1xyXG4gICAgcmV0dXJuIChcclxuICAgICAgICA8PlxyXG4gICAgICAgICAgICA8SGVhZD5cclxuICAgICAgICAgICAgICAgIDxsaW5rIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9Um9ib3RvJmRpc3BsYXk9c3dhcFwiIHJlbD1cInN0eWxlc2hlZXRcIiBrZXk9XCJmb250LXJvYm90by01MDBcIiAvPlxyXG4gICAgICAgICAgICAgICAgPHRpdGxlPkhlbGxvLCBXZXJsZDwvdGl0bGU+XHJcbiAgICAgICAgICAgIDwvSGVhZD5cclxuXHJcbiAgICAgICAgICAgIDxIZXJvIHNyYz1cImh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTMxMTEzNDYzMDY4LTZmMzM0NjIyZDc5NT9peGxpYj1yYi0xLjIuMSZpeGlkPWV5SmhjSEJmYVdRaU9qRXlNRGQ5JmF1dG89Zm9ybWF0JmZpdD1jcm9wJnc9NjAwJnE9NjBcIiAvPlxyXG4gICAgICAgICAgICA8SGVybyBzcmM9XCJodHRwczovL2ltYWdlcy51bnNwbGFzaC5jb20vcGhvdG8tMTU0MDA3MzI4MDIwMi02ZTVjNzgxYmVmZWM/aXhsaWI9cmItMS4yLjEmaXhpZD1leUpoY0hCZmFXUWlPakV5TURkOSZhdXRvPWZvcm1hdCZmaXQ9Y3JvcCZ3PTYwMCZxPTYwXCIgLz5cclxuICAgICAgICAgICAgPGgxPkhlbGxvLCBXZWxyZCE8L2gxPlxyXG4gICAgICAgICAgICA8c3R5bGUganN4PntgXHJcbiAgICAgICAgICAgICAgICAuaDEge1xyXG4gICAgICAgICAgICAgICAgICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcclxuICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgYH08L3N0eWxlPlxyXG4gICAgICAgIDwvPlxyXG4gICAgKTtcclxufVxyXG4iXX0= */\n/*@ sourceURL=C:\\\\Users\\\\rifaa\\\\Desktop\\\\np-fed-healthyliving-update\\\\concept-demo\\\\nextjs\\\\pages\\\\index.tsx */"));
+  }, ".h1.jsx-4240109103{font-family:'Roboto';}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkM6XFxVc2Vyc1xcYWNlclxcRG9jdW1lbnRzXFxOUCBzdHVmZlxcRkVEXFxHaXQgVGVzdFxcbnAtZmVkLWhlYWx0aHlsaXZpbmdcXGNvbmNlcHQtZGVtb1xcbmV4dGpzXFxwYWdlc1xcaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQWN3QixBQUcwQyxxQkFDekIiLCJmaWxlIjoiQzpcXFVzZXJzXFxhY2VyXFxEb2N1bWVudHNcXE5QIHN0dWZmXFxGRURcXEdpdCBUZXN0XFxucC1mZWQtaGVhbHRoeWxpdmluZ1xcY29uY2VwdC1kZW1vXFxuZXh0anNcXHBhZ2VzXFxpbmRleC50c3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgSGVybyBmcm9tICcuL2hlcm8nO1xyXG5pbXBvcnQgSGVhZCBmcm9tICduZXh0L2hlYWQnO1xyXG5cclxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZXBhZ2UoKSB7XHJcbiAgICByZXR1cm4gKFxyXG4gICAgICAgIDw+XHJcbiAgICAgICAgICAgIDxIZWFkPlxyXG4gICAgICAgICAgICAgICAgPGxpbmsgaHJlZj1cImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzP2ZhbWlseT1Sb2JvdG8mZGlzcGxheT1zd2FwXCIgcmVsPVwic3R5bGVzaGVldFwiIGtleT1cImZvbnQtcm9ib3RvLTUwMFwiIC8+XHJcbiAgICAgICAgICAgICAgICA8dGl0bGU+SGVsbG8sIFdlcmxkPC90aXRsZT5cclxuICAgICAgICAgICAgPC9IZWFkPlxyXG5cclxuICAgICAgICAgICAgPEhlcm8gc3JjPVwiaHR0cHM6Ly9pbWFnZXMudW5zcGxhc2guY29tL3Bob3RvLTE1MzExMTM0NjMwNjgtNmYzMzQ2MjJkNzk1P2l4bGliPXJiLTEuMi4xJml4aWQ9ZXlKaGNIQmZhV1FpT2pFeU1EZDkmYXV0bz1mb3JtYXQmZml0PWNyb3Amdz02MDAmcT02MFwiIC8+XHJcbiAgICAgICAgICAgIDxIZXJvIHNyYz1cImh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTQwMDczMjgwMjAyLTZlNWM3ODFiZWZlYz9peGxpYj1yYi0xLjIuMSZpeGlkPWV5SmhjSEJmYVdRaU9qRXlNRGQ5JmF1dG89Zm9ybWF0JmZpdD1jcm9wJnc9NjAwJnE9NjBcIiAvPlxyXG4gICAgICAgICAgICA8aDE+SGVsbG8sIFdlbHJkITwvaDE+XHJcbiAgICAgICAgICAgIDxzdHlsZSBqc3g+e2BcclxuICAgICAgICAgICAgICAgIC5oMSB7XHJcbiAgICAgICAgICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nO1xyXG4gICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICBgfTwvc3R5bGU+XHJcbiAgICAgICAgPC8+XHJcbiAgICApO1xyXG59XHJcbiJdfQ== */\n/*@ sourceURL=C:\\\\Users\\\\acer\\\\Documents\\\\NP stuff\\\\FED\\\\Git Test\\\\np-fed-healthyliving\\\\concept-demo\\\\nextjs\\\\pages\\\\index.tsx */"));
 }
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*******************************!*\
   !*** multi ./pages/index.tsx ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\rifaa\Desktop\np-fed-healthyliving-update\concept-demo\nextjs\pages\index.tsx */"./pages/index.tsx");
+module.exports = __webpack_require__(/*! C:\Users\acer\Documents\NP stuff\FED\Git Test\np-fed-healthyliving\concept-demo\nextjs\pages\index.tsx */"./pages/index.tsx");
 
 
 /***/ }),

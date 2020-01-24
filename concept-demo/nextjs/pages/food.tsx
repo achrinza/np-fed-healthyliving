@@ -1,4 +1,4 @@
-import Hero from "./hero";
+import Hero from "../components/hero";
 import Head from "next/head";
 
 function GlobalStyles() {
@@ -6,7 +6,6 @@ function GlobalStyles() {
         <>
             <style jsx global>{`
                 body {
-                    margin: 0;
                     background-color: #756B66;
                 }
             `}</style>

@@ -12,7 +12,7 @@ export function GlobalStyles() {
 
             <style jsx global>{`
                 body {
-                    margin: 0 auto;
+                    margin: 0;
                     font-family: 'Roboto', sans-serif;
                 }
             `}</style>

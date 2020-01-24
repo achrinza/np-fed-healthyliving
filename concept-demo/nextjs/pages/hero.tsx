@@ -11,9 +11,11 @@ export default function Hero(props) {
 
             <style jsx>{`
                 .hero-img {
-                    height: 30vh;
+                    min-height: 40vh;
+                    max-height: 50vh;
                     width: 100%;
                     object-fit: cover;
+                    position:relative;
                 }
             `}</style>
         </>

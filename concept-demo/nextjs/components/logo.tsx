@@ -5,8 +5,7 @@ export default function Logo() {
 
             <style jsx>{`
                 .block-logo {
-                    background-color: #005501;
-                    color: #fff;
+                    color: #005501;
                     padding: .35rem .75rem;
                     margin: 0;
                     display: inline-block;

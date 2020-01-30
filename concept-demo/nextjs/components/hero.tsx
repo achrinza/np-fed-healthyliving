@@ -3,7 +3,7 @@ import Head from 'next/head';
 export default function Hero(props) {
     return (
         <>  
-            <img className="hero-img" src={props.src} />
+            <img className="hero hero-img" src={props.src} />
 
             {props.children}
 

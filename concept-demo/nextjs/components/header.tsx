@@ -59,7 +59,8 @@ export default function Header() {
                     background-color: #fff;
                     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
                     animation: .5s header-intro;
-                    transition: .5s transform, .5s border-radius, .5s left, .5s right;
+                    transition: .5s transform, .5s border-radius, .5s left, .5s right, .5s border-top;
+                    box-sizing: border-box;
                 }
 
                 @media (min-width: 980px) {
@@ -67,9 +68,7 @@ export default function Header() {
                         left: 5%;
                         right: 5%;
                         border-radius: 12px;
-
                         transform: translateY(25%);
-
                         overflow: hidden;
                     }
 
@@ -78,6 +77,7 @@ export default function Header() {
                         border-radius: 0;
                         left: 0;
                         right: 0;
+                        border-top: 5px solid #005501;
                     }
                 }
 

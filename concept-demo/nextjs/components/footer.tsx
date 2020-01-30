@@ -31,7 +31,7 @@ export default function Footer() {
             <style jsx>{`
                 footer {
                     background-color: black;
-                    padding: 10px 40px;
+                    padding: 20px 50px;
                     color: grey;
                     text-align: center;
                 }
@@ -77,12 +77,13 @@ export default function Footer() {
                         <p>Chicken Dinner Road</p>
                         <p>Street 44 #99-999</p>
                         <p><a href="tel:999-999-999"><i className="material-icons">phone</i> 999-999-999</a></p>
-                        <a href="emailto:Healthy@sg.com"><i className="material-icons">email</i>    Healthy@sg.com</a>
+                        <p><a href="emailto:Healthy@sg.com"><i className="material-icons">email</i>    Healthy@sg.com</a></p>
                     </div>
                     <div className="col-md">
-                        <p className="title">Subscrible for latest news</p>
+                        <p className="title">Email subscrible</p>
                         <hr/>
                         <form>
+                            <p>Subscrible now for the latest news</p>
                             <input type="email" className="email"></input>
                             <button type="submit">SUBSCRIBLE</button>
                         </form>

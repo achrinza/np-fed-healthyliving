@@ -21,65 +21,196 @@ export default function Foodpage() {
             <Head>
                 <title>Healthy Foods</title>
                 <link href="https://fonts.googleapis.com/css?family=Wallpoet|Yeon+Sung&display=swap" rel="stylesheet" />
+                <script defer src="/static/js/parallaxr.js"/>
+                <script src="/static/js/jqury-food.js"></script>
             </Head>
             <div className="header-row">
                 <Header />
             </div>
             <GlobalStyles />
 
-            <div className="row-img">
-                <Hero src="https://images.unsplash.com/photo-1494390248081-4e521a5940db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=995&q=80" style="height: 50vh;" alt="Unable to fetch image">
-                    <div className="hero-text">
-                        <h1>Healthy Foods</h1>
-                        <hr/>
-                        <p>A library of foods, and the many benefits they provide</p>
+            <div id="fullPage">
+                <div className="section">
+                    <div className="parallax-header">
+                        <img src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="header" />
+                        <div data-parallaxr data-parallaxr-drift="100" className="parallax-header_textbox">
+                            <h1>Healthy Foods</h1>
+                            <p>Eat good, feel good, Look Good.</p>
+                        </div>
                     </div>
-                </Hero>
+                </div>
+                <div className="overlay">
+                    <div className="section-special">
+                        <div className="overview">
+                            <img className="healthyplate" src="/static/media/Healthy-Plate.png" alt="Healthy Plate" />
+                            <div className="overview_text">
+                                <p> The Healthy Plate is a friendly, easy-to-understand visual guide for creating balanced and healthy meals, 
+                                    by visually representing the correct proportions of different food groups you should eat on a simple plate.
+                                    You can even use it as a guide to plan your portions accordingly!</p>
+                                <p className="note">Note: This is ultimately a guide, and will have to be tuned to each person.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="sect-separate">
+                    <div className="section">
+                        <div className="sechead">
+                            <h1>In-Depth Analysis</h1>
+                            <hr/>
+                        </div>
+                        <div className="button-row">
+                            <button type="button" value="veggie"><img src="/static/media/veggie.png" alt="veg" /></button>
+                            <button type="button" value="carbs"><img src="/static/media/carbs.png" alt="carb" /></button>
+                            <button type="button" value="meat"><img src="/static/media/meat.png" alt="meat" /></button>
+                        </div>
+                        <div className="tab" id="veg">
+                            <img className="profile" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" /> 
+                            <h1 className="vegh1">Time to pile on those vegetables!</h1>
+                            <p>Fruit and vegetables are naturally low in saturated and trans fat, and rich in dietary fibre, vitamins and minerals. 
+                                They can help lower your risk of developing heart disease, stroke, and certain types of cancer.
+                                Fruit and vegetables also add delightful colours, textures and flavours to your diet. In fact, different colour pigments they contain serve up unique health benefits. 
+                                Treat yourself to the full colourful spectrum of nature’s bounty for maximum benefits.</p>
+                        </div>
+                        <div className="tab" id="carbs">
+                            <img className="profile" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80" /> 
+                            <h1 className="carbsh1">Carbs do more than make you full!</h1>
+                            <p>Wholegrain foods such as brown rice, wholemeal bread and rolled oats contain vitamins (vitamins B and E), minerals (iron, zinc and magnesium), phytochemicals (lignans, phytosterols) and inulin (a type of dietary fibre);
+                                all of which are good for a healthier you.
+                                Refined grains such as white rice or white bread have been processed, so valuable nutrients have been lost.
+                                Choosing whole-grains over refined grains means you get all the goodness that reduces the risk of developing heart disease and diabetes, while helping with weight management since you’ll feel full for longer.</p>
+                        </div>
+                        <div className="tab" id="meat">
+                            <img className="profile" src="https://images.unsplash.com/photo-1542365887-1149961dccc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" /> 
+                            <h1 className="meath1">I know you like these..</h1>
+                            <p>This category includes poultry (e.g. chicken, duck and turkey), meats (e.g. beef, mutton and pork), seafood, eggs, nuts, bean products and low-fat dairy products.
+                               Aim for 2 servings of fish per week. 
+                               Oily fish (e.g. tuna, mackerel, tenggiri batang and ikan tenggiri papan) contain omega-3 fatty acids – a beneficial fat that supports overall heart health.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <style jsx>{`
-                .row-body{
-                    box-shadow: inset 0 0 5px #000000;
-                }
-                .hero-text{
-                    background-color: rgba(0,0,0, 0.65);
-                    background-position: center center;
-                    height: auto;
-                    width: 100%;
+                body {
                     text-align: center;
+                    margin: 0;
+                }
+                .section {
+                    height: 95vh;
+                    padding: 2em;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .section-special {
+                    min-height: 70vh;
+                    max-height: 90vh;
+                    position: relative;
+                    padding-bottom: 2em;
+                }
+                .parallax-header img{
                     position: absolute;
-                    top: 35%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding-top: 10px;
-                    padding-bottom: 10px;
+                    top: 0;
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
                 }
-                hr {
-                    display: block;
-                    height: 1px;
-                    border: 0;
-                    border-top: 3px solid #ccc;
-                    margin: 1em 0;
-                    padding: 0;
-                }
-                .hero-text{
+                .parallax-header_textbox {
+                    position: relative;
+                    text-align: center;
+                    top: 30vh;
+                    font-size: 2em;
                     font-family: "Yeon Sung";
                     color: white;
+                    text-shadow: 2px 2px 4px #061E1F;
                 }
-                .hero-text h1{
-                    font-size: 3.8vw; 
-                    margin-top: 0px;
-                    margin-bottom: 5px;                   
+                .overview {
+                    padding-top: 5vw;
+                    padding-left: 12%;
+                    padding-right: 12%;
                 }
-                .hero-text p{
-                    font-size: 1.8vw;
-                    margin-top: 0px;
-                    margin-bottom: 0px;
+                .healthyplate {
+                    height: auto;
+                    width: 400px;
+                    float: left;
                 }
-                .header-row{
-                    background-color: white;
-                    box-shadow: inset 0 0 10px #000000;
+                .overlay {
+                    background-color: #403A37;
+                    box-shadow 5px 5px 10px #1F1C1B inset;
+                    margin: 5%;        
+                }
+                .overview p {
+                    font-size: 1.8em;
+                    color: white;
+                    text-align: center;
+                    padding-top: 5vw;
+                }
+                .overview .note {
+                    overflow: auto;
+                    color: red;
+                    padding-top: 0;
+                    padding-bottom: 5vw;
+
+                }
+                .sect-separate {
+                    background-color: #574F4B;
+                    padding-top: 2em;
+                }
+                .sechead {
+                    font-size: 1.4em;
+                    text-align: center;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                }
+                .sechead hr {
+                    box-shadow: 2px 2px 2px #1F1C1B;
+                }
+                .button-row {
+                    padding-top: 5px;
+                    text-align: center;
+                }
+                .button-row button {
+                    background-color: #BFAFA6;
+                    width: 13vw;
+                    margin: 0 20px 0 20px;
+                    border-radius: 4%;
+                }
+                .button-row img {
+                    height: auto;
+                    width: 7vw;
+                    
+                }
+                .tab {
+                    padding: 5% 10% 0 10%;
+                }
+                .tab .profile {
+                    height: auto;
+                    width: 500px;
+                    border-radius: 30%;
+                    float: left;
+                    margin: 2vw;
+                }
+                .tab h1 {
+                    font-size: 3em;
+                    text-align: center;
+                    filter: blur(1px);
+                }
+                .tab .vegh1 {
+                    color: #36EB2A;
+                    text-shadow: 0 0 10px #24EB01;
+                }
+                .tab .carbsh1 {
+                    color: #D46B02;
+                    text-shadow: 0 0 10px #F77D02;
+                }
+                .tab .meath1 {
+                    color: #B7002C;
+                    text-shadow: 0 0 10px #D6002C;
+                }
+                .tab p {
+                    font-size: 1.8em;
+                    color: white;
+                    text-align: center;
                 }
             `}</style>
-        </>
+        </>  
     )
 }

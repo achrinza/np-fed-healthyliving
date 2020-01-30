@@ -13,6 +13,7 @@ export default function Benefits() {
                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" key="js-bootstrap4"></script>
                 <link href="https://fonts.googleapis.com/css?family=Anton|Bungee|Oswald&display=swap" rel="stylesheet" key="font-bungee"/>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" key="css-animate" />
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" key="css-fa" />
                 <script async src="/static/js/scroll-left.js" />
             </Head>
 
@@ -72,9 +73,38 @@ export default function Benefits() {
                             </ul>
                         </div>
                     </div>
-                    
-
-
+                </div>
+                <div className="row bg3">
+                    <h2 className="text-center">Short survey</h2>  
+                    <form className="mx-auto box">
+                        <fieldset>
+                            <h5 className="survey">Hello! Please enter your name:</h5>
+                            <br/>
+                            <div className="mx-auto question">
+                                <input id="name"></input>
+                                <button className="next-btn">
+                                    <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </fieldset>
+                        <fieldset hidden>
+                            <h5>Do you enjoy playing sport?</h5>
+                            <br/>
+                            <div className="mx-auto question">
+                                <select className="interval-input"  name="exercise-intervals">
+                                    <option value="" disabled selected hidden> </option>
+                                    <option value="Of course">Of course</option>
+                                    <option value="Yup">Yup</option>
+                                    <option value="Ok la">Ok la</option>
+                                    <option value="Nope">Nope</option>
+                                    <option value="Hell no">Hell no</option>
+                                </select>
+                                <button className="next-btn">
+                                    <i className="fa fa-arrow-right" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
 
@@ -118,7 +148,7 @@ export default function Benefits() {
                     text-align: center;
                     width: 100%;
                 }
-                h5, h2 {
+                h5, h2, form label {
                     font-family: 'Anton';
                 }
                 .hero-text{
@@ -168,10 +198,43 @@ export default function Benefits() {
                 .scroll-animations {
                     display: flex;
                 }
-
                 .scroll-animations div {
                     flex-grow: 1;
                     opacity: 0;
+                }
+                .box{
+                    margin-top: 20px;
+                    background-color: #ff9900;
+                    padding 8vw;
+                    box-shadow: 0 30px 55px 0 rgba(0, 0, 0, 0.3), 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+                }
+                .survey{
+                    margin: 0 5vw;
+                }
+                .next-btn {
+                    width: 60px;
+                    height: 60px;
+                    background-color: #19B5FE;
+                    border-radius: 10px;
+                    margin-top: 2px;
+                    color: white;
+                    font-size: 28px;
+                    padding-left: 10px;
+                    margin-left: 15px;
+                    transition: all 200ms ease-out;
+                }
+                .next-btn:focus, .next-btn:hover {
+                    color: white;
+                    outline: none;
+                    background-color: transparent;
+                    border: 3px solid #19B5FE;
+                }
+                .question{
+                    max-width:90%;
+                }
+                form select, form input{
+                    height: 60px;
+                    width: 70%;
                 }
 
                 @media (max-width: 759px) {

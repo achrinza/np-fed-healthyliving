@@ -4,4 +4,5 @@
     let promptBody = prompt.querySelector('.block-feedback-prompt__body');
 
     prompt.style.bottom = `-${promptBody.clientHeight}px`;
+    console.log(`-${promptBody.clientHeight}px`);
 }());

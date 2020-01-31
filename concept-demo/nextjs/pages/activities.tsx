@@ -11,6 +11,7 @@ export default function Homepage() {
                 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"/>
                 <link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css?family=Acme&display=swap" rel="stylesheet"/>
+
                 <meta name="author" content="Neo Say Ping"/>
                 <meta name="description" content="Healthy activities"/>
                 <title>Healthy Activities - Healthy.SG</title>
@@ -299,7 +300,6 @@ export default function Homepage() {
                 // .hero-wrapper {
                 //     position: relative;
                 // }
-
                 // .hero-text {
                 //     position: absolute;
                 //     top: 0;
@@ -380,7 +380,6 @@ export default function Homepage() {
                 //     width:100%;
                 //     background-color:#45a049;
                 // }
-
             `}</style>
         </>
     );

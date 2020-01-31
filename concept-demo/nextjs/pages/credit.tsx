@@ -3,13 +3,13 @@ import Hero from "../components/hero";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-export default function Benefits() {
+export default function Credit() {
 	return (
 		<>
 			<Head>
 				<title>Credit</title>
                 <meta name="author" content="Tan Jia Shun"/>
-                <meta name="description" content="Benifit"/>
+                <meta name="description" content="Credit"/>
                 <script async src="https://code.jquery.com/jquery-3.4.1.slim.min.js" key="js-jquery3"></script>
 			    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" key="css-bootstrap4" />
 			    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" key="js-bootstrap4"></script>

@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import Logo from './logo'
+import Programmes from '../pages/programmes';
+import Benefits from '../pages/benefits';
 
-export function GlobalStyles() {
+function GlobalStyles() {
     return (
         <>
             <Head>
@@ -20,17 +22,123 @@ export function GlobalStyles() {
     )
 }
 
+function FeedbackPrompt() {
+    return (
+        <>
+            <Head>
+                <script defer src="/static/js/feedback-prompt.js" />
+            </Head>
+
+            <div className="block-feedback-prompt">
+                <h4 className="block-feedback-prompt__lip">Feedback</h4>
+                <div className="block-feedback-prompt__body">
+                    <p>Hey there!</p>
+                </div>
+            </div>
+
+            <style jsx>{`
+                .block-feedback-prompt {
+                    display: none;
+                }
+
+                @media (min-width: 500px) {
+                    .block-feedback-prompt {
+                        position: fixed;
+                        bottom: 0;
+                        right: 10%;
+                        width: 300px;
+                        display: block;
+                        background-color: #fff;
+                        z-index: 1000;
+                        border: 5px solid #000;
+                        border-bottom: 0;
+                        padding: 1rem;
+                    }
+                }
+            `}</style>
+        </>
+    )
+}
+
+function Navbar() {
+    return (
+        <>
+            <Head>
+                <script defer src="/static/js/navbar.js" />
+            </Head>
+
+            <nav className="block-site-navbar block-site-navbar--is-collapsed">
+                <ul>
+                    <li className="block-site-navbar__item"><a href="/">Home</a></li>
+                    <li className="block-site-navbar__item"><a href="/programmes">Programmes</a></li>
+                    <li className="block-site-navbar__item"><a href="/activities">Activities</a></li>
+                    <li className="block-site-navbar__item"><a href="/food">Food</a></li>
+                    <li className="block-site-navbar__item"><a href="/benefits">Benefits</a></li>
+                </ul>
+            </nav>
+
+            <style jsx>{`
+                .block-site-navbar {
+                    display: inline-block;
+                }
+
+                .block-site-navbar > ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                    margin-bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .block-site-navbar__item a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                .block-site-navbar__item {
+                    padding: 1rem 5%;
+                }
+
+                .block-site-navbar--is-collapsed {
+                    display: none;
+                }
+
+                @media (min-width: 500px) {
+                    .block-site-navbar ul {
+                        flex-direction: row;
+                    }
+
+                    .block-site-navbar__item {
+                        padding: .5rem;
+                    }
+
+                    .block-site-navbar--is-collapsed {
+                        display: block;
+                    }
+                }
+            `}</style>
+        </>
+    )
+}
+
 export default function Header() {
     return (
         <>
             <Head>
                 <script defer src="/static/js/header-scroll-collapse.js" />
+                <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" key="css-material-icons" />
             </Head>
 
             <GlobalStyles />
 
+            <FeedbackPrompt />
+
             <header className="block-page-header">
-                <Logo />
+                <div className="block-page-header__part">
+                    <Logo />
+                    <i className="material-icons block-site-navbar-toggler">menu</i>
+                </div>
+                <Navbar />
             </header>
 
             <div className="block-page-header-height-offset" role="presentation" />
@@ -50,6 +158,10 @@ export default function Header() {
                     }
                 }
 
+                .block-site-navbar-toggler {
+                    cursor: pointer;
+                }
+
                 .block-page-header {
                     position: fixed;
                     left: 0;
@@ -61,6 +173,29 @@ export default function Header() {
                     animation: .5s header-intro;
                     transition: .5s transform, .5s border-radius, .5s left, .5s right, .5s border-top;
                     box-sizing: border-box;
+
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .block-page-header__part {
+                    flex-basis: 100%;
+                    flex-grow: 1;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 1.5rem;
+                    justify-content: space-between;
+                }
+                
+                @media (min-width: 500px) {
+                    .block-page-header {
+                        flex-direction: row;
+                        align-items: center;
+                    }
+
+                    .block-site-navbar-toggler {
+                        display: none;
+                    }
                 }
 
                 @media (min-width: 980px) {

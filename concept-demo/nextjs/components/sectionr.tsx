@@ -1,11 +1,10 @@
-export default function SplitSection(props) {
+export default function Sectionr(props) {
     return (
         <>
             <section className={`block-sectionr block-sectionr--flow-${props.type}`}>
                 <img className="block-sectionr__item block-sectionr__img" src={props.imgUrl} />
                 <div className="block-sectionr__item block-sectionr__textblock">
-                    <h2>{props.title}</h2>
-                    <p>{props.description}</p>
+                    {props.children}
                 </div>
             </section>
 
@@ -25,20 +24,24 @@ export default function SplitSection(props) {
                     object-fit: cover;
                 }
 
-                .block-sectionr__item.block-sectionr__textblock:nth-child(1) {
-                    padding-right: 1rem;
+                .block-sectionr__textblock {
+                    padding: 2rem;
                 }
 
-                .block-sectionr__item.block-sectionr__textblock:nth-child(2) {
-                    padding-left: 1rem;
-                }
+                // .block-sectionr__item.block-sectionr__textblock:nth-child(1) {
+                //     padding-right: 1rem;
+                // }
+
+                // .block-sectionr__item.block-sectionr__textblock:nth-child(2) {
+                //     padding-left: 1rem;
+                // }
 
                 .block-sectionr--flow-left {
                     flex-direction: column;
                 }
 
                 .block-sectionr--flow-right {
-                    flex-direction: column-reverse;
+                    flex-direction: column;
                 }
 
                 @media (min-width: 980px) {

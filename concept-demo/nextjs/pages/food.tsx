@@ -29,6 +29,7 @@ export default function Foodpage() {
                 <script async src="/static/js/jqury-food.js" />
                 <script defer src="/static/js/viewport-food.js" />
                 <script async src="/static/js/valida.js"></script>
+                <link rel="stylesheet" href="/static/css/food.css" />
             </Head>
             <div className="header-row">
                 <Header />
@@ -39,7 +40,7 @@ export default function Foodpage() {
                 <div className="section">
                     <div className="parallax-header">
                         <img className="hero" src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="header" />
-                        <div data-parallaxr data-parallaxr-drift="100" className="parallax-header_textbox show-on-scroll">
+                        <div data-parallaxr data-parallaxr-drift="80" data-parallaxr-startfrom="top" className="parallax-header_textbox show-on-scroll">
                             <h1>Healthy Foods</h1>
                             <p>Eat good, feel good, Look Good.</p>
                         </div>
@@ -99,7 +100,7 @@ export default function Foodpage() {
                     <form>
                         <fieldset>
                             <legend>FeedBack</legend>
-                            <label className="fbname">Let us know who you are!:  
+                            <label className="fbname">Let us know who you are! : |  
                                 <input id="feedname" type="text" className="name" placeholder="Enter name(optional)" />
                             </label>
                             <label><input type="radio" name="rating" className="rate" /> 1 Star</label>
@@ -118,243 +119,6 @@ export default function Foodpage() {
             <div className="footer-row">
                 <Footer />
             </div>
-            <style jsx>{`
-                body {
-                    text-align: center;
-                    margin: 0;
-                }
-                .section {
-                    height: 95vh;
-                    padding: 2em;
-                    padding-left: 0;
-                    padding-right: 0;
-                }
-                .section-special {
-                    min-height: 70vh;
-                    max-height: 90vh;
-                    position: relative;
-                    padding-bottom: 2em;
-                }
-                .parallax-header img{
-                    position: absolute;
-                    top: 0;
-                    width: 100%;
-                    height: 100vh;
-                    object-fit: cover;
-                }
-                .parallax-header_textbox {
-                    position: relative;
-                    text-align: center;
-                    top: 10vh;
-                    font-size: 4vw;
-                    font-family: "Yeon Sung";
-                    color: white;
-                    text-shadow: 2px 2px 4px #061E1F;
-                    opacity: 0;
-                    transition: 1s;
-                }
-                .parallax-header_textbox h1 {
-                    font-size: 5vw;
-                }
-                .parallax-header_textbox {
-                    animation: fadeIn 0.4s ease-in 0.7s forwards;
-                }
-
-                .overview {
-                    padding-top: 5vw;
-                    padding-left: 12%;
-                    padding-right: 12%;
-                    transition: 1s;
-                    opacity: 0;
-                    transform: translateX(-30%);   
-                }
-                .overview {
-                    animation: fadeIn 1s ease-in 0.7s forwards, slideIn 0.7s ease-in 0.9s forwards;
-                }
-                
-                .healthyplate {
-                    
-                    height: auto;
-                    width: 45vh;
-                    float: left;
-                }
-                .overlay {
-                    background-color: #403A37;
-                    box-shadow 5px 5px 10px #1F1C1B inset;
-                    margin: 5%;
-                    overflow: hidden;        
-                }
-                .overview p {
-                    font-size: 1.8vw;
-                    color: white;
-                    text-align: center;
-                    padding-top: 4vw;
-                }
-                .overview .note {
-                    overflow: auto;
-                    color: red;
-                    padding-top: 0;
-                    padding-bottom: 5vw;
-                    
-                }
-                .sect-separate {
-                    background-color: #574F4B;
-                    padding-top: 2em;
-                    padding-bottom: 4vw;
-                    overflow: hidden;
-                }
-                .sechead {
-                    font-size: 1.6vw;
-                    text-align: center;
-                    padding-left: 10%;
-                    padding-right: 10%;
-                }
-                .smaller {
-                    width: 90%;
-                }
-
-                @keyframes fadeIn {
-                60% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 1;
-                    }
-                }
-                @keyframes slideIn {
-                    100% {
-                        transform: translateX(0);
-                    }
-                }
-                .sechead hr {
-                    box-shadow: 2px 2px 2px #1F1C1B;
-                }
-                .button-row {
-                    padding-top: 5px;
-                    text-align: center;
-                }
-                .button-row button {
-                    background-color: Transparent;
-                    width: 10vw;
-                    margin: 0 5vw 0 5vw;
-                    border-radius: 10%;
-                    outline:0;
-                    border: 0;
-                    position: relative;
-                    transition: .5s;
-                }
-                .button-row button:before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10%;
-                    background-color: Transparent;
-                    transition: .5s;
-                    transform: scale(0.9s);
-                    z-index: -1; 
-                }
-                .button-row button:hover:before {
-                    transform: scale(1.2);
-                    box-shadow: 0 0 15px #FFF7E8 inset;
-                    filter: blur(3px);
-                }
-                .button-row button:hover {
-                    box-shadow: 0 0 15px #FFF7E8 inset;
-                }
-                .button-row img {
-                    height: auto;
-                    width: 7vw;
-                }
-                .tab {
-                    padding: 5% 10% 0 10%;
-                }
-                .tab .profile {
-                    height: auto;
-                    width: 30vw;
-                    border-radius: 30%;
-                    float: left;
-                    margin: 2vw;
-                }
-                .tab h1 {
-                    font-size: 3vw;
-                    text-align: center;
-                    filter: blur(1px);
-                }
-                .tab .vegh1 {
-                    color: #3D3735;
-                    text-shadow: 0 0 10px #24EB01;
-                }
-                .tab .carbsh1 {
-                    color: #3D3735;
-                    text-shadow: 0 0 10px #F77D02;
-                }
-                .tab .meath1 {
-                    color: #3D3735;
-                    text-shadow: 0 0 10px #D6002C;
-                }
-                .tab p {
-                    font-size: 1.4vw;
-                    color: white;
-                    text-align: center;
-                    overflow: auto;
-                }
-                .profile {
-                    box-shadow: 0 0 15px #FFE6DE;
-                }
-                form {
-                    margin: 10%;
-                    align-self: center;
-                }
-                fieldset {
-                    border: 2px solid black;
-                }
-                legend {
-                    margin: 5px;
-                    width: 30%;
-                    text-align: center;
-                    font-size: 3vw;
-                    background-color: #3D3735;
-                    color: dimgrey;
-                }
-                label {
-                    padding-left: 10%;
-                    font-size: 2vw;
-                    display: inline-block;
-                }
-                #feedname {
-                    background-color: #3D3735;
-                    outline: none;
-                    border: none;
-                    padding-left: 5px;
-                }
-                .fbname {
-                    margin-left: 5vw;
-                    margin-right: 5vw;
-                    padding-right: 3vw;
-                }
-                .submit {
-                    float: right;
-                    font-size: 2vw;
-                    color: dimgrey;
-                    background-color: #3D3735;
-                    border: none;
-                }
-                .answer {
-                    background-color: #3D3735;
-                    width: 80%;
-                    padding-left: 10%;
-                    padding-right: 10%;
-                    margin-left: 10%;
-                }
-                #reply {
-                    text-align: center;
-                    font-size: 3vw;
-                    color: white;
-                }
-            `}</style>
         </>  
     )
 }

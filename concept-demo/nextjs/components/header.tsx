@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Logo from './logo'
 import Programmes from '../pages/programmes';
 import Benefits from '../pages/benefits';
@@ -69,11 +70,11 @@ function Navbar() {
 
             <nav className="block-site-navbar block-site-navbar--is-collapsed">
                 <ul>
-                    <li className="block-site-navbar__item"><a href="/">Home</a></li>
-                    <li className="block-site-navbar__item"><a href="/programmes">Programmes</a></li>
-                    <li className="block-site-navbar__item"><a href="/activities">Activities</a></li>
-                    <li className="block-site-navbar__item"><a href="/food">Food</a></li>
-                    <li className="block-site-navbar__item"><a href="/benefits">Benefits</a></li>
+                    <li className="block-site-navbar__item"><Link href="/">Home</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/programmes">Programmes</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/activities">Activities</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/food">Food</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/benefits">Benefits</Link></li>
                 </ul>
             </nav>
 
@@ -131,7 +132,7 @@ export default function Header() {
 
             <GlobalStyles />
 
-            <FeedbackPrompt />
+            {/* <FeedbackPrompt /> */}
 
             <header className="block-page-header">
                 <div className="block-page-header__part">

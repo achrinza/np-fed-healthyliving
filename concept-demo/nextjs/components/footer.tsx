@@ -98,10 +98,13 @@ export default function Footer() {
 					<div className="col-md">
 						<p className="title">Email subscribe</p>
 						<hr />
-						<form>
+						<form id="sub">
 							<p>subscribe now for the latest news</p>
 							<input type="email" className="email"></input>
 							<button type="submit">SUBSCRIBE</button>
+                            <br/>
+                            <br/>
+                            <p id="sub-result"></p>
 						</form>
 					</div>
 				</div>
@@ -110,6 +113,14 @@ export default function Footer() {
 					<p className="copyright">Copyright &copy; 2020 Healthy SG</p>
 				</div>
 			</footer>
+            <script dangerouslySetInnerHTML={{__html: `
+                $(document).ready(function() {
+                    $('#sub').submit(function(e) {
+                        e.preventDefault(e);
+                        $('#sub-result').text('You have subscribe successfully');
+                    });
+                });
+            `}} />
 		</>
 	);
 }

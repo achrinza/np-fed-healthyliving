@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from '../components/header';
 import Hero from '../components/hero';
 import Footer from '../components/footer';
@@ -40,6 +41,13 @@ export default function Programmes() {
                     <p>Find a programme suited for you!</p>
                 </div> */}
 
+                <div className="block-section-wrapper block-section-wrapper--restricted">
+                    <h2>Join in on the fun</h2>
+                    <p>View the extensive and diverse collection of programmes that is on offer for <em>you!</em>
+                    From straenous phyiscal activities to more family-oriented ones, there's bound to be an activity
+                    that's your fancy</p>
+                </div>
+
                 <div className="block-section-wrapper block-programme-search">
                     <form>
                         <input className="block-programme-search__textbox" type="text" placeholder="Search for a programme" />
@@ -50,7 +58,7 @@ export default function Programmes() {
                     <Sectionr type="left" imgUrl="/static/media/masthead-healthy-living-programme.jpg">
                         <h2>Mall workouts</h2>
                         <p>Grab the latest list of tailored mass-workouts for the public! Enjoy from a wide variety of activities that will get you up to speed.</p>
-                        <div className="block-btn"></div>
+                        <Link href="www.healthhub.sg/programmes/32/health-promoting-malls"><a className="block-btn">Learn more</a></Link>
                     </Sectionr>
                 </div>
 
@@ -59,6 +67,7 @@ export default function Programmes() {
                         <Sectionr type="right" imgUrl="/static/media/fight-programme.jpg">
                             <h2>F.I.G.H.T</h2>
                             <p>Join us and fight the spread of infectious diseases such as influenza, hand, foot and mouth disease, tuberculosis, and pneumococcal disease. We’ve created a song to get you started! Watch on to see how you can do your part.</p>
+                            <Link href="https://www.healthhub.sg/programmes/52/Fight_The_Spread"><a className="block-btn">Learn more</a></Link>
                         </Sectionr>
                     </div>
                 </div>
@@ -68,6 +77,7 @@ export default function Programmes() {
                         <Sectionr type="left" imgUrl="/static/media/eatdrinkshop-challenge.png">
                             <h2>Eat, Drink, Shop Challenge</h2>
                             <p>Want non-stop wins at health? Choose healthy to earn Healthpoints and rewards! Simply scan your QR receipt with the Healthy 365 app and redeem exciting rewards such as grocery and dining discounts!</p>
+                            <Link href="https://www.healthhub.sg/programmes/136/eat-drink-shop-healthy-challenge"><a className="block-btn">Learn more</a></Link>
                         </Sectionr>
                     </div>
                 </div>
@@ -77,16 +87,13 @@ export default function Programmes() {
                         <Sectionr type="right" imgUrl="/static/media/nsc.png">
                             <h2>National Steps Challenge™ Community Challenge</h2>
                             <p>Feel good with every move as you bond with your neighbours! The National Steps Challenge™ Season 5 is back with Community Challenge!</p>
+                            <Link href="https://www.healthhub.sg/programmes/124/community-challenge"><a className="block-btn">Learn more</a></Link>
                         </Sectionr>
                     </div>
                 </div>
 
                 <Footer />
             </div>
-
-            <style jsx>{`
-
-            `}</style>
         </>
     )
 }

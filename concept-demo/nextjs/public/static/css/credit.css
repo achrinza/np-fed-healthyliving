@@ -1,0 +1,25 @@
+.block-hero__textblock-group{
+    padding-left: 10px;
+}
+
+.credit{
+    padding: 30px 100px!Important;
+}
+
+.title{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.row{
+    margin: 20px 40px;
+}
+
+.icon, .info{
+    float: left;
+}
+
+.icon img{
+    width: 100%;
+    border-radius: 50%;
+}

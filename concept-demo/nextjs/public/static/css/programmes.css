@@ -17,7 +17,7 @@
 
 @keyframes hero-backdrop-intro {
     0% {
-        opacity: 0;
+        opacity 0;
     }
     100% {
         opacity: 1;
@@ -124,7 +124,7 @@
     margin: 5%;
 }
 
-.block-section-wrapper--restricted{
+.block-section-wrapper--restricted {
     max-width: 980px;
     padding: 5%;
     padding-bottom: 0;
@@ -209,4 +209,16 @@
 
 .block-hero-wrapper:hover .block-sectionr h2::before {
     width: 100%;
+}
+
+.block-btn {
+    padding: .5rem 1rem;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,.25);
+    display: inline-block;
+    transition: .5s box-shadow;
+    cursor: pointer;
+}
+
+.block-btn:hover {
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,.25);
 }

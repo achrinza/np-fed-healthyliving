@@ -12,6 +12,7 @@ export function GlobalStyles() {
 				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossOrigin="anonymous" key="css-bootstrap4" />
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossOrigin="anonymous" key="js-bootstrap4" />
 				<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" key="css-font-awesome" />
+                <link rel="stylesheet" href="/static/css/footer.css" />
 			</Head>
 
 			<style jsx global>{`
@@ -28,40 +29,7 @@ export default function Footer() {
 	return (
 		<>
 			<GlobalStyles />
-			<style jsx>{`
-				footer {
-					background-color: black;
-					padding: 20px 50px;
-					color: grey;
-					text-align: center;
-				}
-				footer .title {
-					color: white;
-					font-weight: bold;
-				}
-				footer a {
-					color: grey;
-				}
-				footer hr {
-					margin: 10px auto;
-					width: 80%;
-					border: 0;
-					height: 1px;
-					background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
-				}
-				.copyright {
-					margin: 0;
-					font-size: 12px;
-					width: 100%;
-				}
-				i {
-					vertical-align: middle !important;
-				}
-				footer button {
-					margin-left: 15px;
-				}
-			`}</style>
-			<footer className="container-fluid">
+			<footer className="container-fluid footer">
 				<div className="row">
 					<div className="col-md">
 						<p className="title">Useful Sites</p>
@@ -100,7 +68,7 @@ export default function Footer() {
 						<hr />
 						<form id="sub">
 							<p>subscribe now for the latest news</p>
-							<input type="email" className="email"></input>
+							<input type="email" className="email" required></input>
 							<button type="submit">SUBSCRIBE</button>
                             <br/>
                             <br/>

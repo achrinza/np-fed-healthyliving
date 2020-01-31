@@ -27,9 +27,7 @@ $(document).ready(function() {
             if(id < 5){
                 var id1 = '#q'+ id;
                 var id2 = '#q'+ (id + 1);
-                console.log("bb")
                 $(id1).addClass('fadeOutRight').delay(500).queue(function(next){
-                    console.log("aa")
                     $(id1).hide().removeClass('fadeInLeft').removeClass('fadeOutRight');
                     $(id2).addClass('fadeInLeft').show();
                     next();

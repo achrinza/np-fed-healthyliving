@@ -1,6 +1,9 @@
 body{
     overflow-x: hidden;
 }
+.block-hero__textblock-group{
+    padding-left: 10px;
+}
 .container-fluid{
     background-color: #d8f1ea;
     padding: 0!Important;

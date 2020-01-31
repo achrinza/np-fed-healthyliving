@@ -75,6 +75,7 @@ function Navbar() {
                     <li className="block-site-navbar__item"><Link href="/activities">Activities</Link></li>
                     <li className="block-site-navbar__item"><Link href="/food">Food</Link></li>
                     <li className="block-site-navbar__item"><Link href="/benefits">Benefits</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/credits">Credits</Link></li>
                 </ul>
             </nav>
 

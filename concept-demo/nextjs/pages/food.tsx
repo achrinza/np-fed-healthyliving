@@ -21,8 +21,10 @@ export default function Foodpage() {
             <Head>
                 <title>Healthy Foods</title>
                 <link href="https://fonts.googleapis.com/css?family=Wallpoet|Yeon+Sung&display=swap" rel="stylesheet" />
-                <script defer src="/static/js/parallaxr.js"/>
-                <script src="/static/js/jqury-food.js"></script>
+                <script defer src="/static/js/parallaxr.js" />
+                <script async src="/static/js/jqury-food.js" />
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" key="jquery3" />
+                <script src="/static/js/viewport-food.js" />
             </Head>
             <div className="header-row">
                 <Header />
@@ -32,8 +34,8 @@ export default function Foodpage() {
             <div id="fullPage">
                 <div className="section">
                     <div className="parallax-header">
-                        <img src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="header" />
-                        <div data-parallaxr data-parallaxr-drift="100" className="parallax-header_textbox">
+                        <img className="hero" src="https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="header" />
+                        <div data-parallaxr data-parallaxr-drift="100" className="parallax-header_textbox show-on-scroll">
                             <h1>Healthy Foods</h1>
                             <p>Eat good, feel good, Look Good.</p>
                         </div>
@@ -41,7 +43,7 @@ export default function Foodpage() {
                 </div>
                 <div className="overlay">
                     <div className="section-special">
-                        <div className="overview">
+                        <div className="overview show-on-scroll">
                             <img className="healthyplate" src="/static/media/Healthy-Plate.png" alt="Healthy Plate" />
                             <div className="overview_text">
                                 <p> The Healthy Plate is a friendly, easy-to-understand visual guide for creating balanced and healthy meals, 
@@ -55,13 +57,14 @@ export default function Foodpage() {
                 <div className="sect-separate">
                     <div className="section">
                         <div className="sechead">
-                            <h1>In-Depth Analysis</h1>
                             <hr/>
+                            <h1>In-Depth Analysis</h1>
+                            <hr className="smaller"/>
                         </div>
                         <div className="button-row">
-                            <button type="button" value="veggie"><img src="/static/media/veggie.png" alt="veg" /></button>
-                            <button type="button" value="carbs"><img src="/static/media/carbs.png" alt="carb" /></button>
-                            <button type="button" value="meat"><img src="/static/media/meat.png" alt="meat" /></button>
+                            <button type="button" id="veggie"><img src="/static/media/veggie.png" alt="veg" /></button>
+                            <button type="button" id="carbos"><img src="/static/media/carbs.png" alt="carb" /></button>
+                            <button type="button" id="protein"><img src="/static/media/meat.png" alt="meat" /></button>
                         </div>
                         <div className="tab" id="veg">
                             <img className="profile" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" /> 
@@ -116,49 +119,82 @@ export default function Foodpage() {
                 .parallax-header_textbox {
                     position: relative;
                     text-align: center;
-                    top: 30vh;
-                    font-size: 2em;
+                    top: 10vh;
+                    font-size: 3vw;
                     font-family: "Yeon Sung";
                     color: white;
                     text-shadow: 2px 2px 4px #061E1F;
+                    opacity: 0;
+                    transition: 1s;
                 }
+                .parallax-header_textbox {
+                    animation: fadeIn 0.4s ease-in 0.7s forwards;
+                }
+
                 .overview {
                     padding-top: 5vw;
                     padding-left: 12%;
                     padding-right: 12%;
+                    transition: 1s;
+                    opacity: 0;
+                    transform: translateX(-30%);   
                 }
+                .overview {
+                    animation: fadeIn 1s ease-in 0.7s forwards, slideIn 0.7s ease-in 0.9s forwards;
+                }
+                
                 .healthyplate {
+                    
                     height: auto;
-                    width: 400px;
+                    width: 45vh;
                     float: left;
                 }
                 .overlay {
                     background-color: #403A37;
                     box-shadow 5px 5px 10px #1F1C1B inset;
-                    margin: 5%;        
+                    margin: 5%;
+                    overflow: hidden;        
                 }
                 .overview p {
-                    font-size: 1.8em;
+                    font-size: 1.8vw;
                     color: white;
                     text-align: center;
-                    padding-top: 5vw;
+                    padding-top: 4vw;
                 }
                 .overview .note {
                     overflow: auto;
                     color: red;
                     padding-top: 0;
                     padding-bottom: 5vw;
-
+                    
                 }
                 .sect-separate {
                     background-color: #574F4B;
                     padding-top: 2em;
+                    padding-bottom: 4vw;
                 }
                 .sechead {
-                    font-size: 1.4em;
+                    font-size: 1.6vw;
                     text-align: center;
                     padding-left: 10%;
                     padding-right: 10%;
+                }
+                .smaller {
+                    width: 90%;
+                }
+
+                @keyframes fadeIn {
+                60% {
+                        opacity: 0;
+                    }
+                    100% {
+                        opacity: 1;
+                    }
+                }
+                @keyframes slideIn {
+                    100% {
+                        transform: translateX(0);
+                    }
                 }
                 .sechead hr {
                     box-shadow: 2px 2px 2px #1F1C1B;
@@ -168,47 +204,75 @@ export default function Foodpage() {
                     text-align: center;
                 }
                 .button-row button {
-                    background-color: #BFAFA6;
-                    width: 13vw;
-                    margin: 0 20px 0 20px;
-                    border-radius: 4%;
+                    background-color: Transparent;
+                    width: 10vw;
+                    margin: 0 5vw 0 5vw;
+                    border-radius: 10%;
+                    outline:0;
+                    border: 0;
+                    position: relative;
+                    transition: .5s;
+                }
+                .button-row button:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10%;
+                    background-color: Transparent;
+                    transition: .5s;
+                    transform: scale(0.9s);
+                    z-index: -1; 
+                }
+                .button-row button:hover:before {
+                    transform: scale(1.2);
+                    box-shadow: 0 0 15px #FFF7E8 inset;
+                    filter: blur(3px);
+                }
+                .button-row button:hover {
+                    box-shadow: 0 0 15px #FFF7E8 inset;
                 }
                 .button-row img {
                     height: auto;
                     width: 7vw;
-                    
                 }
                 .tab {
                     padding: 5% 10% 0 10%;
                 }
                 .tab .profile {
                     height: auto;
-                    width: 500px;
+                    width: 30vw;
                     border-radius: 30%;
                     float: left;
                     margin: 2vw;
                 }
                 .tab h1 {
-                    font-size: 3em;
+                    font-size: 3vw;
                     text-align: center;
                     filter: blur(1px);
                 }
                 .tab .vegh1 {
-                    color: #36EB2A;
+                    color: #3D3735;
                     text-shadow: 0 0 10px #24EB01;
                 }
                 .tab .carbsh1 {
-                    color: #D46B02;
+                    color: #3D3735;
                     text-shadow: 0 0 10px #F77D02;
                 }
                 .tab .meath1 {
-                    color: #B7002C;
+                    color: #3D3735;
                     text-shadow: 0 0 10px #D6002C;
                 }
                 .tab p {
-                    font-size: 1.8em;
+                    font-size: 1.4vw;
                     color: white;
                     text-align: center;
+                    overflow: auto;
+                }
+                .profile {
+                    box-shadow: 0 0 15px #FFE6DE;
                 }
             `}</style>
         </>  

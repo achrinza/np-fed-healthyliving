@@ -1,29 +1,33 @@
-(function() {
-    'use-strict';
 
-    function setVisibility(id) {
-        let visibility = document.getElementById(id).style.display;
-        switch (visibility.value) {
-            case 'none':
-                visibility.value = 'inline';
-            case 'inline':
-                visibility.value = 'none';
-        }
-        document.getElementById(id).style.display = visibility.value;
-    }
-    let veg = document.getElementById('veg');
-    let carbs = document.getElementById('carbs');
-    let meat = document.getElementById('meat');
-
-    setVisibility(carbs);
-    setVisibility(meat);
-    veg.addEventListener('click', () => {
-        setVisibility('veg');
+    $('#carbs').hide();
+    $('#meat').hide();
+    
+    $(document).ready(function() {
+        $('#veggie').off().click(function() {
+            if ($('#meat').is(':visible')){
+                $('#meat').fadeOut(100);
+            }
+            if($('#carbs').is(':visible')) {
+                $('#carbs').fadeOut(100);
+            }
+            $('#veg').delay(700).fadeIn(1000);
+        })
+        $('#carbos').off().click(function() {
+            if ($('#meat').is(':visible')){
+                $('#meat').fadeOut(100);
+            }
+            if ($('#veg').is(':visible')){
+                $('#veg').fadeOut(100);
+            }
+            $('#carbs').delay(700).fadeIn(1000);
+        })
+        $('#protein').off().click(function() {
+            if ($('#veg').is(':visible')){
+                $('#veg').fadeOut(100);
+            }
+            if ($('#carbs').is(':visible')){
+                $('#carbs').fadeOut(100);
+            }
+            $('#meat').delay(700).fadeIn(1000);
+        })
     })
-    carbs.addEventListener('click', () => {
-        setVisibility('carbs');
-    })
-    meat.addEventListener('click', () => {
-        setVisibility('meat');
-    })
-})

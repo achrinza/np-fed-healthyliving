@@ -14,8 +14,6 @@
                 (startFrom == 'top' ? 0 : x.offsetHeight / 2))
                 / window.innerHeight * (pixelDrift / 100);
             x.style.transform = `translateY(${screenPosPercentage * 100}%)`;
-            console.log(screenPosPercentage);
-            console.log(pixelDrift)
         });
    });
 }());

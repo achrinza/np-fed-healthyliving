@@ -41,8 +41,26 @@ export default function Programmes() {
                     <p>Find a programme suited for you!</p>
                 </div> */}
 
+                <div className="block-section-wrapper">
+                    <h2>Why partake in a programme?</h2>
+                    <div className="block-reason-wrapper">
+                        <div className="block-reason">
+                            <h3>Engage</h3>
+                            <p>Get closer with the community by joining an assortment of activities.</p>
+                        </div>
+                        <div className="block-reason">
+                            <h3>Get fit</h3>
+                            <p>Get a step closer to becoming healthier through phyiscal workouts and dieting.</p>
+                        </div>
+                        <div className="block-reason">
+                            <h3>Learn</h3>
+                            <p>Understand how to treat your body better and nicer with our experts!</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="block-section-wrapper block-section-wrapper--restricted">
-                    <h2>Join in on the fun</h2>
+                    <h2 className="stylo-title"><span className="accented">Join</span> in on the fun</h2>
                     <p>View the extensive and diverse collection of programmes that is on offer for <em>you!</em>
                     From straenous phyiscal activities to more family-oriented ones, there's bound to be an activity
                     that's your fancy</p>
@@ -56,7 +74,7 @@ export default function Programmes() {
 
                 <div className="block-section-wrapper block-programme" data-animatr="left">
                     <Sectionr type="left" imgUrl="/static/media/masthead-healthy-living-programme.jpg">
-                        <h2>Mall workouts</h2>
+                        <h2 className="stylo-title">Mall workouts</h2>
                         <p>Grab the latest list of tailored mass-workouts for the public! Enjoy from a wide variety of activities that will get you up to speed.</p>
                         <Link href="www.healthhub.sg/programmes/32/health-promoting-malls"><a className="block-btn">Learn more</a></Link>
                     </Sectionr>
@@ -65,7 +83,7 @@ export default function Programmes() {
                 <div className="block-main-content-wrapper block-programme">
                     <div className="block-section-wrapper" data-animatr="right">
                         <Sectionr type="right" imgUrl="/static/media/fight-programme.jpg">
-                            <h2>F.I.G.H.T</h2>
+                            <h2 className="stylo-title">F.I.G.H.T</h2>
                             <p>Join us and fight the spread of infectious diseases such as influenza, hand, foot and mouth disease, tuberculosis, and pneumococcal disease. We’ve created a song to get you started! Watch on to see how you can do your part.</p>
                             <Link href="https://www.healthhub.sg/programmes/52/Fight_The_Spread"><a className="block-btn">Learn more</a></Link>
                         </Sectionr>
@@ -75,7 +93,7 @@ export default function Programmes() {
                 <div className="block-main-content-wrapper block-programme">
                     <div className="block-section-wrapper" data-animatr="left">
                         <Sectionr type="left" imgUrl="/static/media/eatdrinkshop-challenge.png">
-                            <h2>Eat, Drink, Shop Challenge</h2>
+                            <h2 className="stylo-title">Eat, Drink, Shop Challenge</h2>
                             <p>Want non-stop wins at health? Choose healthy to earn Healthpoints and rewards! Simply scan your QR receipt with the Healthy 365 app and redeem exciting rewards such as grocery and dining discounts!</p>
                             <Link href="https://www.healthhub.sg/programmes/136/eat-drink-shop-healthy-challenge"><a className="block-btn">Learn more</a></Link>
                         </Sectionr>
@@ -85,7 +103,7 @@ export default function Programmes() {
                 <div className="block-main-content-wrapper block-programme">
                     <div className="block-section-wrapper" data-animatr="right">
                         <Sectionr type="right" imgUrl="/static/media/nsc.png">
-                            <h2>National Steps Challenge™ Community Challenge</h2>
+                            <h2 className="stylo-title">National Steps Challenge™ Community Challenge</h2>
                             <p>Feel good with every move as you bond with your neighbours! The National Steps Challenge™ Season 5 is back with Community Challenge!</p>
                             <Link href="https://www.healthhub.sg/programmes/124/community-challenge"><a className="block-btn">Learn more</a></Link>
                         </Sectionr>

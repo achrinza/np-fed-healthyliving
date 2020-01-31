@@ -8,6 +8,9 @@ export default function Programmes() {
     return (
         <>
             <Head>
+				<title>Programmes</title>
+                <meta name="author" content="Rifa Achrinza"/>
+                <meta name="description" content="Programmes"/>
                 <script defer src="/static/js/animatr.js" />
                 <script defer src="/static/js/stickyr.js" />
                 <script defer src="/static/js/program-searchr.js" />

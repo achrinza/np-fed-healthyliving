@@ -20,7 +20,7 @@ export default function Benefits() {
 			</Head>
 
 			<Header />
-
+      
 			<div className="top-header">
 				<Hero src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" style="height: 50vh;" alt="Unable to fetch image">
 					<div className="hero-text">

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Logo from './logo'
 import Programmes from '../pages/programmes';
 import Benefits from '../pages/benefits';
@@ -41,7 +42,7 @@ function FeedbackPrompt() {
                     display: none;
                 }
 
-                @media (min-width: 500px) {
+                @media (min-width: 980px) {
                     .block-feedback-prompt {
                         position: fixed;
                         bottom: 0;
@@ -69,11 +70,11 @@ function Navbar() {
 
             <nav className="block-site-navbar block-site-navbar--is-collapsed">
                 <ul>
-                    <li className="block-site-navbar__item"><a href="/">Home</a></li>
-                    <li className="block-site-navbar__item"><a href="/programmes">Programmes</a></li>
-                    <li className="block-site-navbar__item"><a href="/activities">Activities</a></li>
-                    <li className="block-site-navbar__item"><a href="/food">Food</a></li>
-                    <li className="block-site-navbar__item"><a href="/benefits">Benefits</a></li>
+                    <li className="block-site-navbar__item"><Link href="/">Home</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/programmes">Programmes</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/activities">Activities</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/food">Food</Link></li>
+                    <li className="block-site-navbar__item"><Link href="/benefits">Benefits</Link></li>
                 </ul>
             </nav>
 
@@ -103,7 +104,7 @@ function Navbar() {
                     display: none;
                 }
 
-                @media (min-width: 500px) {
+                @media (min-width: 980px) {
                     .block-site-navbar ul {
                         flex-direction: row;
                     }
@@ -131,7 +132,7 @@ export default function Header() {
 
             <GlobalStyles />
 
-            <FeedbackPrompt />
+            {/* <FeedbackPrompt /> */}
 
             <header className="block-page-header">
                 <div className="block-page-header__part">
@@ -187,7 +188,7 @@ export default function Header() {
                     justify-content: space-between;
                 }
                 
-                @media (min-width: 500px) {
+                @media (min-width: 980px) {
                     .block-page-header {
                         flex-direction: row;
                         align-items: center;

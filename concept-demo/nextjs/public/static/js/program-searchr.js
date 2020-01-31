@@ -14,7 +14,6 @@
                 x.classList.add('animatr-triggered');
             } else {
                 x.style.display = "none";
-                // x.classList.remove('animatr-triggered');
             }
         })
     });

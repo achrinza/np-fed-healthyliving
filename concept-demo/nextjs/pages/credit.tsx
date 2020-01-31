@@ -50,7 +50,7 @@ export default function Credit() {
                             <a href="https://github.com/achrinza">https://github.com/achrinza</a>
                             <h4>Contribution: </h4>
                             <ul>
-                                <li>Header and nav</li>
+                                <li>Header, nav and unified hero</li>
                                 <li>programmes.html</li>
                             </ul>
                         </div>

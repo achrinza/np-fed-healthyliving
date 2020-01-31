@@ -22,6 +22,8 @@ export default function Sectionr(props) {
                 .block-sectionr__img {
                     max-height: 50vh;
                     object-fit: cover;
+                    
+                    ${props.style}
                 }
 
                 .block-sectionr__textblock {

@@ -42,7 +42,7 @@ function FeedbackPrompt() {
                     display: none;
                 }
 
-                @media (min-width: 500px) {
+                @media (min-width: 980px) {
                     .block-feedback-prompt {
                         position: fixed;
                         bottom: 0;
@@ -104,7 +104,7 @@ function Navbar() {
                     display: none;
                 }
 
-                @media (min-width: 500px) {
+                @media (min-width: 980px) {
                     .block-site-navbar ul {
                         flex-direction: row;
                     }
@@ -188,7 +188,7 @@ export default function Header() {
                     justify-content: space-between;
                 }
                 
-                @media (min-width: 500px) {
+                @media (min-width: 980px) {
                     .block-page-header {
                         flex-direction: row;
                         align-items: center;

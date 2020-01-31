@@ -3,7 +3,7 @@
 }
 
 .credit{
-    margin: 30px 50px;;
+    padding: 30px 100px!Important;
 }
 
 .title{
@@ -13,6 +13,10 @@
 
 .row{
     margin: 20px 40px;
+}
+
+.icon, .info{
+    float: left;
 }
 
 .icon img{

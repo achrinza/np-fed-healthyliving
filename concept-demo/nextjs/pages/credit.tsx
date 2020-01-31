@@ -41,12 +41,94 @@ export default function Benefits() {
                     <h1>Our Team</h1>
                 </div>
                 <div className="row">
-                    <div className="icon col-2">
-                    <img src="/static/media/user1.jpg"></img>
+                    <div className="col">
+                        <div className="icon col-4">
+                            <img src="/static/media/user1.jpg"></img>
+                        </div>
+                        <div className="info col-6">
+                            <h3>Rifa Achrinza</h3>
+                            <a href="https://github.com/achrinza">https://github.com/achrinza</a>
+                            <h4>Contribution: </h4>
+                            <ul>
+                                <li>Header and nav</li>
+                                <li>programmes.html</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="info col">
-                        <h3>Rifa Achrinza</h3>
-                        <p>https://github.com/achrinza</p>
+                    <div className="col">
+                        <div className="icon col-4">
+                            <img src="/static/media/user2.jpg"></img>
+                        </div>
+                        <div className="info col-6">
+                            <h3>Tan Jia Shun</h3>
+                            <a href="https://github.com/dodieboy">https://github.com/dodieboy</a>
+                            <h4>Contribution: </h4>
+                            <ul>
+                                <li>Footer</li>
+                                <li>benefits.html</li>
+                                <li>credit.html</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <div className="icon col-4">
+                            <img src="/static/media/user3.png"></img>
+                        </div>
+                        <div className="info col-6">
+                            <h3>Neo Say Ping</h3>
+                            <a href="https://github.com/SayPing02">https://github.com/SayPing02</a>
+                            <h4>Contribution: </h4>
+                            <ul>
+                                <li>activities.html</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="icon col-4">
+                            <img src="/static/media/user4.png"></img>
+                        </div>
+                        <div className="info col-6">
+                            <h3>Lim Jun Hao</h3>
+                            <a href="https://github.com/AlephaLIm">https://github.com/AlephaLIm</a>
+                            <h4>Contribution: </h4>
+                            <ul>
+                                <li>food.html</li>
+                                <li>index.html</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="title">
+                    <h1>Speical Thanks</h1>
+                </div>
+                <div className="row">
+                    <div className="col">
+                        <div className="icon col-4">
+                                <img src="/static/media/thank1.jpg"></img>
+                        </div>
+                        <div className="info col-6">
+                            <h3>Unsplash</h3>
+                            <a href="https://unsplash.com">https://unsplash.com</a>
+                            <h4>Contribution: </h4>
+                            <ul>
+                                <li>Non-copyright photo</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="icon col-4">
+                                <img src="/static/media/thank2.png"></img>
+                        </div>
+                        <div className="info col-6">
+                            <h3>Pexel</h3>
+                            <a href="https://www.pexels.com/videos">https://www.pexels.com/videos</a>
+                            <h4>Contribution: </h4>
+                            <ul>
+                                <li>Non-copyright video</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

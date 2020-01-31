@@ -8,7 +8,9 @@ export default function Benefits() {
 		<>
 			<Head>
 				<title>Benifit</title>
-				<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" key="js-jquery3"></script>
+                <meta name="author" content="Tan Jia Shun"/>
+                <meta name="description" content="Benifit"/>
+				<script async src="https://code.jquery.com/jquery-3.4.1.slim.min.js" key="js-jquery3"></script>
 				<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" key="css-bootstrap4" />
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" key="js-bootstrap4"></script>
 				<link href="https://fonts.googleapis.com/css?family=Anton|Bungee|Oswald&display=swap" rel="stylesheet" key="font-bungee" />

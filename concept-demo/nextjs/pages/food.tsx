@@ -1,6 +1,7 @@
 import Hero from "../components/hero";
 import Head from "next/head";
 import Header from '../components/header';
+import Footer from '../components/footer';
 
 function GlobalStyles() {
     return (
@@ -20,11 +21,14 @@ export default function Foodpage() {
         <>
             <Head>
                 <title>Healthy Foods</title>
+                <meta name="author" content="Lim Jun Hao" />
+                <meta name="description" content="Healthy Foods" />
                 <link href="https://fonts.googleapis.com/css?family=Wallpoet|Yeon+Sung&display=swap" rel="stylesheet" />
                 <script defer src="/static/js/parallaxr.js" />
+                <script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" key="jquery3" />
                 <script async src="/static/js/jqury-food.js" />
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" key="jquery3" />
-                <script src="/static/js/viewport-food.js" />
+                <script defer src="/static/js/viewport-food.js" />
+                <script async src="/static/js/valida.js"></script>
             </Head>
             <div className="header-row">
                 <Header />
@@ -91,6 +95,28 @@ export default function Foodpage() {
                         </div>
                     </div>
                 </div>
+                <div className="section">
+                    <form>
+                        <fieldset>
+                            <legend>FeedBack</legend>
+                            <label className="fbname">Let us know who you are!:  
+                                <input id="feedname" type="text" className="name" placeholder="Enter name(optional)" />
+                            </label>
+                            <label><input type="radio" name="rating" className="rate" /> 1 Star</label>
+                            <label><input type="radio" name="rating" className="rate" /> 2 Star</label>
+                            <label><input type="radio" name="rating" className="rate" /> 3 Star</label>
+                            <label><input type="radio" name="rating" className="rate" /> 4 Star</label>
+                            <label><input type="radio" name="rating" className="rate" /> 5 Star</label>
+                        </fieldset>
+                        <input type="submit" className="submit"/>
+                    </form>
+                    <div className="answer">
+                        <p id="reply"></p>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-row">
+                <Footer />
             </div>
             <style jsx>{`
                 body {
@@ -120,12 +146,15 @@ export default function Foodpage() {
                     position: relative;
                     text-align: center;
                     top: 10vh;
-                    font-size: 3vw;
+                    font-size: 4vw;
                     font-family: "Yeon Sung";
                     color: white;
                     text-shadow: 2px 2px 4px #061E1F;
                     opacity: 0;
                     transition: 1s;
+                }
+                .parallax-header_textbox h1 {
+                    font-size: 5vw;
                 }
                 .parallax-header_textbox {
                     animation: fadeIn 0.4s ease-in 0.7s forwards;
@@ -172,6 +201,7 @@ export default function Foodpage() {
                     background-color: #574F4B;
                     padding-top: 2em;
                     padding-bottom: 4vw;
+                    overflow: hidden;
                 }
                 .sechead {
                     font-size: 1.6vw;
@@ -273,6 +303,56 @@ export default function Foodpage() {
                 }
                 .profile {
                     box-shadow: 0 0 15px #FFE6DE;
+                }
+                form {
+                    margin: 10%;
+                    align-self: center;
+                }
+                fieldset {
+                    border: 2px solid black;
+                }
+                legend {
+                    margin: 5px;
+                    width: 30%;
+                    text-align: center;
+                    font-size: 3vw;
+                    background-color: #3D3735;
+                    color: dimgrey;
+                }
+                label {
+                    padding-left: 10%;
+                    font-size: 2vw;
+                    display: inline-block;
+                }
+                #feedname {
+                    background-color: #3D3735;
+                    outline: none;
+                    border: none;
+                    padding-left: 5px;
+                }
+                .fbname {
+                    margin-left: 5vw;
+                    margin-right: 5vw;
+                    padding-right: 3vw;
+                }
+                .submit {
+                    float: right;
+                    font-size: 2vw;
+                    color: dimgrey;
+                    background-color: #3D3735;
+                    border: none;
+                }
+                .answer {
+                    background-color: #3D3735;
+                    width: 80%;
+                    padding-left: 10%;
+                    padding-right: 10%;
+                    margin-left: 10%;
+                }
+                #reply {
+                    text-align: center;
+                    font-size: 3vw;
+                    color: white;
                 }
             `}</style>
         </>  

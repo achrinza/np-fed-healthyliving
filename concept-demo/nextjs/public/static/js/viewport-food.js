@@ -10,5 +10,3 @@ const targets = document.querySelectorAll(".show-on-scroll");
 targets.forEach(function(target) {
     observer.observe(target);
 })
-
-callback;

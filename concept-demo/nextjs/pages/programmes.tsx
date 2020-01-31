@@ -43,6 +43,11 @@ export default function Programmes() {
                     <p>Find a programme suited for you!</p>
                 </div> */}
 
+                <div className="block-section-wrapper block-section-wrapper--restricted">
+                    <h2>Join in the fun</h2>
+                    <p>View the extensive and diverse collection of programmes that is on offer for <em>you!</em> From straenous phyiscal activities to more family-oriented ones, there's bound to be an activity that's your fancy</p>
+                </div>
+
                 <div className="block-section-wrapper block-programme-search">
                     <form>
                         <input className="block-programme-search__textbox" type="text" placeholder="Search for a programme" />

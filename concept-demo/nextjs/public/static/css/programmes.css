@@ -124,6 +124,13 @@
     margin: 5%;
 }
 
+.block-section-wrapper--restricted{
+    max-width: 980px;
+    padding: 5%;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+
 @keyframes animatr-triggered-left {
     0% {
         transform: translateX(-50%);
